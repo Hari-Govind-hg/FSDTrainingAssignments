@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script type="text/javascript" src="store.js"></script>
+        <!-- <script type="text/javascript" src="oops.js"></script> -->
+        <style type="text/css">
+        input{
+            display: block;
+        }
+        input[type="text"],select, input[type="number"] {
+            margin: 2px;
+            width: 13em;
+            height: 2.5em;
+            border-radius: 3px;
+            border: 1px solid;
+            border-color: darkgreen;
+        }
+        .btn-save{
+            cursor: pointer;
+            width: 13em;
+            border-radius: 3px;
+            border: 1px solid;
+        }
+        .btn-save:hover{
+            background-color:bisque;
+            border-radius: 3px;
+            border: 1px solid;    
+        }
+        a{
+            text-decoration: none;
+        }
+        #err{
+            color: brown;
+        }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>ADD/ EDIT Employee</legend>
+            <input type="text" id="name" placeholder="Name..."/>
+            <input type="number" id="salary" placeholder="Salary..."/>
+            <input type="number" id="age" placeholder="Age..."/>
+            <input type="button" onclick="saveUser();" value="Save"/>
+        </fieldset>
+
+        <input type="text" id="txt" />
+        <input type="button" value="Click Me" onclick="callMe();"/>
+        <input type="button" value="Display " onclick="getAll();"/>
+        <div id="emps">
+        </div>
+        <div id="err">
+
+        </div>
+    </body>
+</html>
